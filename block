@@ -3,6 +3,7 @@
 if [ "$1" = '-d' ]; then
     # Print dependencies
     echo scrot mogrify i3lock
+    exit
 fi
 
 scrot /tmp/lock.png
