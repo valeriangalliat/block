@@ -13,8 +13,7 @@ Idea taken from [here](http://plankenau.com/blog/post-10/gaussianlock).
 Dependencies
 ------------
 
-- `scrot`
-- `mogrify` (from `imagemagick`)
+- `import` and `mogrify` (from `imagemagick`)
 - `i3lock`
 
 Options

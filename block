@@ -2,10 +2,10 @@
 
 if [ "$1" = '-d' ]; then
     # Print dependencies
-    echo scrot mogrify i3lock
+    echo import mogrify i3lock
     exit
 fi
 
-scrot /tmp/lock.png
+import -window root /tmp/lock.png
 mogrify -blur 0x5 /tmp/lock.png
 i3lock -nui /tmp/lock.png
