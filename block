@@ -1,11 +1,6 @@
-#!/bin/sh
+#!/bin/sh -e
 
-if [ "$1" = '-d' ]; then
-    # Print dependencies
-    echo import mogrify i3lock
-    exit
-fi
-
-import -window root /tmp/lock.png
+scrot /tmp/lock.png
 mogrify -blur 0x5 /tmp/lock.png
 i3lock -nui /tmp/lock.png
+rm /tmp/lock.png
